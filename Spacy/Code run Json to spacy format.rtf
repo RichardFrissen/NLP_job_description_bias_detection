@@ -1,0 +1,28 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww37900\viewh19680\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 python3 \cf3 \cb2 /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Python\\ application/Json\\ to\\ spacy\\ format.py\cf2 \cb1  -i /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Annotation_data_model_input.json -o /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Annotation_data_model_input_spacy.txt > /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Annotation_data_model_input_spacy.txt\
+\
+ONDERSTAANDE GEBRUIKEN\
+\
+Origineel\
+python3 /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Python\\ application/Json\\ to\\ spacy\\ format.py -i /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Annotation_data_model_input.json -o /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Annotation_data_model_input_spacy.txt > /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Spacy_v2_format.txt\
+\
+Train\
+python3 /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Python\\ application/Json\\ to\\ spacy\\ format.py -i /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Train_Annotation_data_model_input.json -o /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Train_Annotation_data_model_input_spacy.txt > /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Train_Spacy_v2_format.txt\
+\
+Eval\
+python3 /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Python\\ application/Json\\ to\\ spacy\\ format.py -i /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Eval_Annotation_data_model_input.json -o /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Eval_Annotation_data_model_input_spacy.txt > /Users/richardfrissen/Documents/Maastricht\\ University/Thesis/Development/Datasets/EMSCAD/Input\\ model/Eval_Spacy_v2_format.txt\
+\
+Spacy train\
+python3 -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./train.spacy\
+\
+python3 -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy\
+\
+\
+Spacy eval\
+python3 -m spacy evaluate output/model-best eval.spacy --output --displaycy-path}
